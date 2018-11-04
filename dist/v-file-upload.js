@@ -312,7 +312,7 @@ module.exports = function (e) {
     "use strict";
     var r = function () {
         var e = this, t = e.$createElement, n = e._self._c || t;
-        return n("div", {staticClass: "file-upload"}, [e.thumbUrl(e.anexo) ? n("div", {staticClass: "thumb-preview"}, [n("div", {staticClass: "thumb-preview-item"}, [n("img", {attrs: {src: e.thumbUrl(e.anexo)}})])]) : e._e(), n("div", {
+        return n("div", {staticClass: "file-upload"}, [e.thumbUrl(e.anexo) ? n("div", {staticClass: "thumb-preview"}, [n("div", {staticClass: "thumb-preview-item"}, [n("img", {attrs: {src: e.thumbUrl(e.anexo)}})], [n("span")], (e.anexo.original), n("span"))]) : e._e(), n("div", {
             staticClass: "input-wrapper",
             style: e.inputWrapperStyle
         }, [n("input", {
