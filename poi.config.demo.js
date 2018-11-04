@@ -3,7 +3,7 @@ module.exports = (options, req) => ({
   sourceMap: false,
   removeDist: true,
   dist: 'docs',
-  homepage: '/v-file-upload/',
+  homepage: '/vue-files-upload/',
   html: {
     template: './demo/index.html'
   }
