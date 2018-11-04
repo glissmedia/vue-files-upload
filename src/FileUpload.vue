@@ -23,7 +23,7 @@
                 }
             },
             accept: {type: String, default: '.png,.jpg'},
-            inputId: {type: String, default: 'file-upload-input'},
+            inputId: {type: String, default: "file-upload-input"},
             headers: {
                 type: Object,
                 default: () => {

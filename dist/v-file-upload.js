@@ -255,6 +255,7 @@ module.exports = function (e) {
                 }
             },
             accept: {type: String, default: ".png,.jpg"},
+            inputId: {type: String, default: "file-upload-input"},
             headers: {
                 type: Object, default: function () {
                     return {}
@@ -297,7 +298,8 @@ module.exports = function (e) {
                     t.$emit("error", e), t.progress = 0, t.cleanInput()
                 })
             }, cleanInput: function () {
-                var e = window.document.getElementById("file-upload-input");
+                var iid = this.inputId ? this.inputId : "file-upload-input";
+                var e = window.document.getElementById(iid);
                 e && (e.value = "")
             }, onProgress: function (e) {
                 this.progress = parseInt(100 * e.loaded / e.total), this.$emit("progress", this.progress)
